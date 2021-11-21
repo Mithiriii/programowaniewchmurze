@@ -1,5 +1,5 @@
 #OPIS
-Wszystkie screeny zostały umieszczone w folderze https://github.com/Mithiriii/programowaniewchmurze/tree/main/images
+Wszystkie screeny zostały umieszczone w folderze https://github.com/Mithiriii/programowaniewchmurze/tree/main/images <br>
 Wszystkie pliki zostały umieszczone w folderze https://github.com/Mithiriii/programowaniewchmurze/tree/main/files
 
 # ZADANIE 1
