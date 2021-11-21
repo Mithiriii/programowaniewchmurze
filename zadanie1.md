@@ -14,6 +14,7 @@ echo $NETSTATS >> file.log
 chmod 777 file.log
 ```
 Użyte zostały podstawowe funkcje linuxa.
+W pliku html użyłem javascript by nie używać niczego dodatkowego po stronie serwera. Skrypt wykonuje się po stronie klienta.
 Plik html wygląda następująco:
 ```html
 <html>
