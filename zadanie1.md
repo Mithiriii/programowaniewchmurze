@@ -82,3 +82,15 @@ c) W konsoli używamy polecenia: docker exec -it <nazwa_obrazu> /bin/bash <br>
 W kolejnym kroku używamy: cat file.log <br>
 d) Używamy polecenia: docker inspect <nazwa_obrazu> | jq '.[] .RootFS' <br>
 ![alt text](https://github.com/Mithiriii/programowaniewchmurze/blob/main/images/screen1.PNG "title")
+
+# ZADANIE 4
+
+Można zbudować obraz z githuba: <br>
+docker build [OPTIONS] PATH | URL | - </br>
+Link do dokumentacji: https://docs.docker.com/engine/reference/commandline/build/ <br><br>
+
+Żeby wrzucić obraz na dockerhub należy stworzyć konto na https://hub.docker.com/ <br>
+Tworzymy tam respozytorium <br>
+Logujemy się w terminalu do naszego konta na DockerHub: docker login <br>
+Budujemy nasz obraz: docker build -t <nazwa_obrazu> . <br>
+Pushujemy nasz obraz: docker push <nazwa_repo> <br>
