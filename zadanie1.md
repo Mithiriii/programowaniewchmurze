@@ -68,3 +68,4 @@ EXPOSE 443
 RUN echo "ServerName localhost" >> /usr/local/apache2/conf/httpd.conf
 RUN ["projekt/skrypt.sh"]
 ```
+Podczas budowania pliku dodałem etykiete author wskazującą moje imię i nazwisko. Bazowym obrazem jest httpd:2.4, doinstalowałem net-tools które były potrzebne do użycia w skrypcie. Kopiuję skrypt do folderu projekt a plik index do htdocs które służy za publiczny folder do indexu. Ustawiam port na 433, konfiguruje nazwę serwera i koniec końców uruchamiam skrypt.
