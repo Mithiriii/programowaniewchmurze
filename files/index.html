@@ -1,0 +1,33 @@
+<html>
+<head>
+<script src=
+"https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+    </script>
+
+    <script>
+
+        $.getJSON("https://api.ipify.org?format=json",
+                                          function(data) {
+
+            // Setting text of element P with id gfg
+            $("#gfg").html(data.ip);
+        })
+
+
+</script>
+</head>
+<body>
+
+<p id="gfg"></p>
+<p id="output"></p>
+
+<script>
+var today = new Date();
+	var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
+	var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+	var dateTime = date+' '+time;
+	document.getElementById('output').innerHTML = dateTime;
+</script>
+
+</body>
+</html>
