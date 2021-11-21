@@ -77,3 +77,4 @@ b) Używamy polecenia w konsoli: docker run -dit --name <nazwa_kontenera> -p 443
 c) W konsoli używamy polecenia: docker exec -it <nazwa_obrazu> /bin/bash <br>
 W kolejnym kroku używamy: cat file.log <br>
 d) Używamy polecenia: docker inspect <nazwa_obrazu> | jq '.[] .RootFS' <br>
+![alt text](https://github.com/Mithiriii/programowaniewchmurze/blob/main/images/screen1.PNG "title")
