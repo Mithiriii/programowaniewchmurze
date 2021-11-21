@@ -72,8 +72,8 @@ Podczas budowania pliku dodałem etykiete author wskazującą moje imię i nazwi
 
 # ZADANIE 3
 
-a) W folderze z Dockerfile należy użyć polecenia: docker build -t <nazwa_obrazu> .
-b) Używamy polecenia w konsoli: docker run -dit --name <nazwa_kontenera> -p 443:80 <nazwa_obrazu>
-c) W konsoli używamy polecenia: docker exec -it <nazwa_obrazu> /bin/bash
-W kolejnym kroku używamy: cat file.log
-d) Używamy polecenia: docker inspect <nazwa_obrazu> | jq '.[] .RootFS'
+a) W folderze z Dockerfile należy użyć polecenia: docker build -t <nazwa_obrazu> . <br>
+b) Używamy polecenia w konsoli: docker run -dit --name <nazwa_kontenera> -p 443:80 <nazwa_obrazu> <br>
+c) W konsoli używamy polecenia: docker exec -it <nazwa_obrazu> /bin/bash <br>
+W kolejnym kroku używamy: cat file.log <br>
+d) Używamy polecenia: docker inspect <nazwa_obrazu> | jq '.[] .RootFS' <br>
