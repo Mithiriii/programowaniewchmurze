@@ -68,4 +68,12 @@ EXPOSE 443
 RUN echo "ServerName localhost" >> /usr/local/apache2/conf/httpd.conf
 RUN ["projekt/skrypt.sh"]
 ```
-Podczas budowania pliku dodałem etykiete author wskazującą moje imię i nazwisko. Bazowym obrazem jest httpd:2.4, doinstalowałem net-tools które były potrzebne do użycia w skrypcie. Kopiuję skrypt do folderu projekt a plik index do htdocs które służy za publiczny folder do indexu. Ustawiam port na 433, konfiguruje nazwę serwera i koniec końców uruchamiam skrypt.
+Podczas budowania pliku dodałem etykiete author wskazującą moje imię i nazwisko. Bazowym obrazem jest httpd:2.4, doinstalowałem net-tools które były potrzebne do użycia w skrypcie. Kopiuję skrypt do folderu projekt a plik index do htdocs które służy za publiczny folder do indexu. Ustawiam port na 433, konfiguruje nazwę serwera i koniec końców uruchamiam skrypt. Ważne jest żeby skrypt.sh oraz Dockerfile znajdowały się w tym samym folderze.
+
+# ZADANIE 3
+
+a) W folderze z Dockerfile należy użyć polecenia: docker build -t <nazwa_obrazu> .
+b) Używamy polecenia w konsoli: docker run -dit --name <nazwa_kontenera> -p 443:80 <nazwa_obrazu>
+c) W konsoli używamy polecenia: docker exec -it <nazwa_obrazu> /bin/bash
+W kolejnym kroku używamy: cat file.log
+d) Używamy polecenia: docker inspect <nazwa_obrazu> | jq '.[] .RootFS'
