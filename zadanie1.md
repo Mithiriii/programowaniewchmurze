@@ -1,3 +1,7 @@
+#OPIS
+Wszystkie screeny zostały umieszczone w folderze https://github.com/Mithiriii/programowaniewchmurze/tree/main/images
+Wszystkie pliki zostały umieszczone w folderze https://github.com/Mithiriii/programowaniewchmurze/tree/main/files
+
 # ZADANIE 1
 
 Został stworzony skrypt w bashu który posłużył do stworzenia pliku file.log zawierający logi.
