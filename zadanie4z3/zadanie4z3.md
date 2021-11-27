@@ -1,3 +1,7 @@
+# OPIS
+Pliki znajdują się w katalogu: https://github.com/Mithiriii/programowaniewchmurze/tree/main/zadanie4z3/files
+Screeny w katalogu: https://github.com/Mithiriii/programowaniewchmurze/tree/main/zadanie4z3/images
+
 # Zadanie 1
 
 plik pluto.sh
