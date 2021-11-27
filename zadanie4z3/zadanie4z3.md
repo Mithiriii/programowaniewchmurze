@@ -20,3 +20,9 @@ VOLUME [ "/logi" ]
 COPY pluto.sh pluto.sh
 ENTRYPOINT [ "sh","./pluto.sh" ]
 ```
+
+W pliku pluto.sh kolejno ustawiamy zmienną DATA po czym ją drukujemy na konsoli i efekt tego wysyłamy do pliku /logi/info.log. Później sprawdzamy zużytej pamięci. <br>
+W pliku Dockerfile kolejno wskazujemy z jakiego obrazu korzystamy, ustawiłem labela autor z moim imieniem i nazwisko. Trzecia linijka to utworzenie katalogu roboczego, wskazujemy który folder będzie volumenem. Kopiujemy skrypt pluto.sh i ustawiamy uruchomienie skryptu gdy kontener ruszy.
+
+# Zadanie 2
+Do zbudowania obrazu używamy komendy: docker build -t lab4docker .
