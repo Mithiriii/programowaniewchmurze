@@ -26,7 +26,7 @@ W pliku Dockerfile kolejno wskazujemy z jakiego obrazu korzystamy, ustawiłem la
 
 # Zadanie 2
 Do zbudowania obrazu używamy komendy: docker build -t lab4docker .
-![alt text](linkscr1 "title")
+![alt text](https://github.com/Mithiriii/programowaniewchmurze/blob/main/zadanie4z3/images/scr1.PNG "title")
 
 # Zadanie 3
 Utworzyłem volumen lokalnie komendą: docker volume create RemoteVol
@@ -37,14 +37,14 @@ Uruchamienie kontrolera z potrzebnymi opcjami: docker run -it --name alpine4 --m
 # Zadanie 5
 Używam komendy: docker volume inspect RemoteVol <br>
 Dzięki niej mogę zobaczyć ścieżkę montowania
-![alt text](linkscr2 "title")
+![alt text](https://github.com/Mithiriii/programowaniewchmurze/blob/main/zadanie4z3/images/scr2.PNG "title")
 I użyć komendy: cat /var/lib/docker/volumes/RemoteVol/_data/info.log  <br>
 By zobaczyć zawartość pliku info.log na kosoli.
-![alt text](linkscr3 "title")
+![alt text](https://github.com/Mithiriii/programowaniewchmurze/blob/main/zadanie4z3/images/scr3.PNG "title")
 Żeby zobaczyć ile konener alpine4 ma pamięci ram należy użyć polecenia: docker inspect alpine4 | grep Memory <br>
 Po podzieleniu liczby 536870912 na 1024^2(przechodzimy z bajtów przez kilobajty na megabajty) wychodzi nam 512MB co zgadza się z założeniem zadania.
-![alt text](linkscr4 "title")
+![alt text](https://github.com/Mithiriii/programowaniewchmurze/blob/main/zadanie4z3/images/scr4.PNG "title")
 Możemy jeszcze sprawdzić czy kontener na pewno zawiera plik info.log poprzez urzycie następujących komend:  <br>
-docker cp alpine4:/ ./test - kopiuje filesystem z alpine4 do kataloku test <br>
+docker cp alpine4:/ ./test - kopiuje filesystem z alpine4 do katalogu test <br>
 ls -all test/logi/ - sprawdzam pliki w katalogu test/logi
- ![alt text](linkscr5 "title")
+ ![alt text](https://github.com/Mithiriii/programowaniewchmurze/blob/main/zadanie4z3/images/scr5.PNG "title")
