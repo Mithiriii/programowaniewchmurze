@@ -120,3 +120,4 @@ Docker run --rm -it --name dcv -v ${PWD}:/input pmsipilot/docker-compose-viz ren
 ```
 Screen:
 https://github.com/Mithiriii/programowaniewchmurze/blob/main/projekt2/achmea.techday.png
+![dziala](https://github.com/Mithiriii/programowaniewchmurze/blob/main/projekt2/achmea.techday.png)
